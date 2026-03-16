@@ -79,6 +79,8 @@ public class PerformanceBenchmark {
             else if (key > node.key) node.right = insertRec(node.right, key, record);
             else return node;
 
+
+
             node.height = 1 + max(height(node.left), height(node.right));
             int balance = getBalance(node);
 
