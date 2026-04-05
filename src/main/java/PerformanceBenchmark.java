@@ -47,39 +47,6 @@ public class PerformanceBenchmark {
             }
         }
 
-//
-//        public Node search(int key) {
-//            return searchRec(root, key);
-//        }
-//
-//        private Node searchRec(Node root, int key) {
-//            if (root == null || root.key == key) return root;
-//
-//            if (key < root.key) return searchRec(root.left, key);
-//            return searchRec(root.right, key);
-//        }
-//
-//        public void delete(int key) {
-//            root = deleteRec(root, key);
-//        }
-//
-//        private Node deleteRec(Node root, int key) {
-//            if (root == null) return root;
-//
-//            if (key < root.key) {
-//                root.left = deleteRec(root.left, key);
-//            } else if (key > root.key) {
-//                root.right = deleteRec(root.right, key);
-//            } else {
-//                if (root.left == null) return root.right;
-//                else if (root.right == null) return root.left;
-//
-//                root.key = minValue(root.right);
-//
-//                root.right = deleteRec(root.right, root.key);
-//            }
-//            return root;
-//        }
         public Node search(int key) {
             Node current = root;
             while (current != null) {
